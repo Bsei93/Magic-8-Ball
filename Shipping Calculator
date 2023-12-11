@@ -1,0 +1,50 @@
+weight = 8.5
+
+# Ground Shipping
+
+if weight <= 2:
+  cost_ground = weight*1.50+20
+  cost_ground_1 = format(cost_ground, '.2f')
+  print("Ground Shipping: $" + str(cost_ground_1))
+
+elif weight > 2 and weight <= 6:
+  cost_ground = weight*3.0+20
+  cost_ground_1 = format(cost_ground, '.2f')
+  print("Ground Shipping: $" + str(cost_ground_1))
+
+elif weight > 6 and weight <= 10:
+  cost_ground = weight*4.0+20
+  cost_ground_1 = format(cost_ground, '.2f')
+  print("Ground Shipping: $" + str(cost_ground_1))
+
+elif weight > 10:
+  cost_ground = weight*4.75+20
+  cost_ground_1 = format(cost_ground, '.2f')
+  print("Ground Shipping: $" + str(cost_ground_1))
+
+# Ground Shipping Premium
+
+cost_ground_premium = 125.00
+print("Ground Ship Prem: $" + str(cost_ground_premium))
+
+# Drone Shipping
+
+if weight <= 2:
+  cost_drone = weight*4.50
+  cost_drone_1 = format(cost_drone, '.2f')
+  print("Drone Shipping: $" + str(cost_drone_1))
+
+elif weight > 2 and weight <= 6:
+  cost_drone = weight*9.0
+  cost_drone_1 = format(cost_drone, '.2f')
+  print("Drone Shipping: $" + str(cost_drone_1))
+
+elif weight > 6 and weight <= 10:
+  cost_drone = weight*12.0
+  cost_drone_1 = format(cost_drone, '.2f')
+  print("Drone Shipping: $" + str(cost_drone_1))
+
+elif weight > 10:
+  cost_drone = weight*14.25
+  cost_drone_1 = format(cost_drone, '.2f')
+  print("Drone Shipping: $" + str(cost_drone_1))
